@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--https://ivomynttinen.com/work-->
 
 <head>
   <meta charset="utf-8">
@@ -39,62 +40,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="dep/Custom/style.css" rel="stylesheet">
-<style>
 
-/* ---- particles.js container ---- */
-    
-    /*#particles-js {
-      position: absolute;
-      width: 100%;
-      height: 500px;
-      background-color: #b61924;
-      background-image: url("");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }*/
-    
-    #particles-js {
-      position:fixed;
-      width: 100%;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-size: cover;
-  display: table;
-  position: relative;
-  /* background-size: cover; */
-  padding: 150px 0;
-  /*color: #fff;*/
-  width: 100%;
-  height: 100vh;
-}
-
-#particles-js:after {
-  content: '';
-  z-index: 0;
-  /* position: absolute; */
-  /* background: rgba(0, 0, 0, 0.65); */
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-#particles-js .container {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media (max-width: 61.9em) {
-  #particles-js{
-    padding: 75px 0;
-  }
-}
-</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -103,24 +49,33 @@
   <!-- Hero -->
 
   <!--<section class="hero">-->
-  <section id="particles-js">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12">
-          <a class="hero-brand" href="index.html" title="Home"><img alt="Matthew Peterman Logo" width="50%" src="dep/img/logosq.png"></a>
-        </div>
+  <section style="padding: 0px;">
+    <div class="jumbotron jumbotron-main jumbotron-fluid" id="home">
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
       </div>
-
-      <!--<div id="particles-js"></div>-->
-      <div class="col-md-12">
-        <h1>
-            A theme with personality
-          </h1>
-
-        <p class="tagline">
-          This is a powerful theme with some great features that you can use in your future projects.
-        </p>
-        <a class="btn btn-full" href="#about">Get Started Now</a>
+      <!-- /.particles div -->
+      <div class="container center-vertically-holder" style="pointer-events: none;">
+        <div class="center-vertically">
+          <div class="col-sm-4 col-lg-4 mx-auto text-center">
+            <img src="dep/img/logosq.png" width="100%" />
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 col-lg-6 mx-auto text-center">
+            <h1 class="scaleReveal" data-sr-id="46" style=" visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+              A template with a bit of a different
+              <strong>look &amp; feel</strong>.
+            </h1>
+            <p class="bottomReveal" data-sr-id="2" style=" visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">Particles is a fun and multipurpose template, with clean &amp; modern design
+              <i>+</i>&nbsp; code.</p>
+            <a href="#ideology" data-id="ideology" class="scroll-link">
+              <div class="scroll-indicator rotateBottomReveal" data-sr-id="40" style=" visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+                <span class="ion-mouse"></span>
+                <br>
+                <span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -129,811 +84,961 @@
 
   <!-- Header -->
   <header id="header">
-        <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-primary" style="z-index: 1;">
-            <div id="logo" class="pull-left">
-              <a href="index.html"><img src="dep/img/logosqw.png" alt="" title="" /></img></a>
-              <!-- Uncomment below if you prefer to use a text image -->
-              <h4 style="display:inline"><a href="#hero" class="navbar-brand">Matthew Peterman</a></h4>
-              
-            </div>
-          
-            <button class="navbar-toggler" style="top: 0;right: 0;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <!--inc skills resume and interests and blurb-->
-                <li class="nav-item"><a class="nav-link" href="#features">Education &amp; Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-              </ul>
-            </div>
-            <div class="nav social-nav pull-right d-none d-lg-inline">
-                <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a></div>
-          
-          
-      
-              </nav>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-primary" style="z-index: 1;">
+      <div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="dep/img/logosqw.png" alt="" title="" /></img>
+        </a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <h4 style="display:inline">
+          <a href="#hero" class="navbar-brand">Matthew Peterman</a>
+        </h4>
 
-          <!---fix all of this-->
+      </div>
 
-      
-      <!-- #nav-menu-container -->
+      <button class="navbar-toggler" style="top: 0;right: 0;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <!--inc skills resume and interests and blurb-->
+          <li class="nav-item">
+            <a class="nav-link" href="#workhistory">Education &amp; Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfoliopast">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+
+
+
+    </nav>
+
+    <!---fix all of this-->
+
+
+    <!-- #nav-menu-container -->
 
   </header>
   <!-- #header -->
 
   <!-- About -->
-
   <section class="about" id="about">
     <div class="container text-center">
       <h2>
-          About Matthew Peterman Theme
-        </h2>
+        About Me
+      </h2>
 
       <p>
-        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, per nihil dicant commodo an. Eum tacimates erroribus ad. Atqui feugiat euripidis ea pri, sed veniam tacimates ex. Menandri
-        temporibus an duo.
+        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl
+        moderatius, per nihil dicant commodo an. Eum tacimates erroribus ad. Atqui feugiat euripidis ea pri, sed veniam tacimates
+        ex. Menandri temporibus an duo.
       </p>
 
-      <div class="row stats-row">
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">79</span> Released Projects
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <!-- /About -->
-  <!-- Parallax -->
 
-  <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="dep/img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-    <h2>
-        Welcome to a perfect theme
-      </h2>
-
-    <p>
-      This is the most powerful theme with thousands of options that you have never seen before.
-    </p>
-    <img alt="Matthew Peterman - A perfect theme" class="gadgets-img hidden-md-down" src="dep/img/gadgets.png">
-  </div>
-  <!-- /Parallax -->
-  <!-- Features -->
-
-  <section class="features" id="features">
-    <div class="container">
-      <h2 class="text-center">
-          Features
-        </h2>
-
-      <div class="row">
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-rocket"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Custom Design
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-envelope"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Responsive Layout
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-Matthew Peterman"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Innovative Ideas
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-database"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Good Documentation
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-cutlery"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Excellent Features
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-col col-lg-4 col-xs-12">
-          <div class="card card-block text-center">
-            <div>
-              <div class="feature-icon">
-                <span class="fa fa-dashboard"></span>
-              </div>
-            </div>
-
-            <div>
-              <h3>
-                  Retina Ready
-                </h3>
-
-              <p>
-                Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Features -->
-  <!-- Call to Action -->
-
+  <!-- Software stats -->
   <section class="cta">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-          <h2>
-              Call to Action Section
-            </h2>
-
-          <p>
-            Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-          </p>
+        <br/>
+        <div class="col text-center">
+          <h2>Bootstrap 4 counter</h2>
+          <p>counter to count up to a target number</p>
         </div>
 
-        <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-          <a class="btn btn-ghost" href="#">Buy This Theme</a>
+
+
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-code fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+            <p class="count-text ">Our Customer</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-coffee fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+            <p class="count-text ">Happy Clients</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-lightbulb-o fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+            <p class="count-text ">Project Complete</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-bug fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+            <p class="count-text ">Coffee With Clients</p>
+          </div>
         </div>
       </div>
+    </div>
+
+  </section>
+  <!-- /Software stats -->
+
+  <!-- History -->
+  <section id="workhistory" class="cd-timeline js-cd-timeline workhistory text-center">
+    <h2>
+      Education &amp; Work History
+    </h2>
+    <div class="cd-timeline__container">
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-picture.svg" alt="Picture">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Multimedia Technology</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat
+            iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+          
+          <span class="cd-timeline__date">Jan 14</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-movie.svg" alt="Movie">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Contract work</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat
+            iure tempora laudantium ipsa ad debitis unde?</p>
+          
+          <span class="cd-timeline__date">Jan 18</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-picture.svg" alt="Picture">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Officeworks</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores
+            voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae
+            rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus
+            quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem
+            voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+          
+          <span class="cd-timeline__date">Jan 24</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-location.svg" alt="Location">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>KFC</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat
+            iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+          
+          <span class="cd-timeline__date">Feb 14</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-location.svg" alt="Location">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Ormiston College Theatre</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+          
+          <span class="cd-timeline__date">Feb 18</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-movie.svg" alt="Movie">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>QUT Legacy</h2>
+          <p>This is the content of the last section</p>
+          <span class="cd-timeline__date">Feb 26</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-location.svg" alt="Location">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>QUT bachelor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat
+            iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+          
+          <span class="cd-timeline__date">Feb 14</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-location.svg" alt="Location">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Diploma</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+          
+          <span class="cd-timeline__date">Feb 18</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+          <img src="dep/verticletimeline/cd-icon-movie.svg" alt="Movie">
+        </div>
+        <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Cert 3(other if cirts)</h2>
+          <p>This is the content of the last section</p>
+          <span class="cd-timeline__date">Feb 26</span>
+        </div>
+        <!-- cd-timeline__content -->
+      </div>
+      <!-- cd-timeline__block -->
     </div>
   </section>
-  <!-- /Call to Action -->
+  <!-- History -->
+
+  <!-- Skills -->
+  <section id="Competencies">
+    <a class="anchor" id="a-competencies"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sectionTitle">Competencies</div>
+          <div id="skillgraph" class="panel panel-default">
+            <div class='row skill-row'>
+              <span class='skillLabel'>Api, Python</span>
+              <span class='skillData-Wrapper'>
+                <span class='skillData bg-blue text-center' data-percent='50'>Beginner</span>
+              </span>
+            </div>
+            <div class='row skill-row'>
+              <span class='skillLabel'>SEO/SEM &amp; Social Media</span>
+              <span class='skillData-Wrapper'>
+                <span class='skillData bg-rust' data-percent='60'>Average</span>
+              </span>
+            </div>
+            <div class='row skill-row'>
+              <span class='skillLabel'>JavaScript. jQuery &amp; Ajax</span>
+              <span class='skillData-Wrapper'>
+                <span class='skillData bg-blue' data-percent='80'>Intermediate</span>
+              </span>
+            </div>
+            <div class='row skill-row'>
+              <span class='skillLabel'>HTML &mp; CSS</span>
+              <code>Including Bootstrap &amp; Email</code>
+              <span class='skillData-Wrapper'>
+                <span class='skillData bg-rust' data-percent='80'>Very Strong</span>
+              </span>
+            </div>
+            <div class='row skill-row'>
+              <span class='skillLabel'>SQL &mp; PHP</span>
+              <code>(Skills: MS SQL, MySQL, Laravel Eloquent)</code>
+              <span class='skillData-Wrapper'>
+                <span class='skillData bg-rust' data-percent='90'>Strong</span>
+              </span>
+            </div>
+          </div>
+
+          <canvas  id="canvasone" width="1050" height="600"  style="background-color:rgba(255,255,255,1.00);border-radius:0px;width:700px;height:400px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+  
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /Skills -->
+  
+
   <!-- Portfolio -->
+  <section id="portfoliopast" class="team bg-dark">
 
-  <section class="portfolio" id="portfolio">
-    <div class="container text-center">
-      <h2>
-          Portfolio
-        </h2>
-
-      <p>
-        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, Per nihil dicant commodo an.
-      </p>
-    </div>
-
-    <div class="portfolio-grid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-1.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="gallery-title">Portfolio</h1>
         </div>
 
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-2.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
+        <div align="center" class="col-12">
+          <button class="btn btn-default filter-button" data-filter="all">All</button>
+          <button class="btn btn-default filter-button" data-filter="email">Email</button>
+          <button class="btn btn-default filter-button" data-filter="html">HTML</button>
+          <button class="btn btn-default filter-button" data-filter="design">Design</button>
+          <button class="btn btn-default filter-button" data-filter="social">Social Media</button>
+        </div>
+        <br/>
 
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
 
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-3.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
 
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
 
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-4.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
 
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter design ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter html ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter html ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter social ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter social ">
+          <div class="container card card-block">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <img alt="" class="team-img" src="dep/img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span>
+                <span class="card-text">Art Director</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-5.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-6.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-7.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-block">
-            <a href="#"><img alt="" src="dep/img/porf-8.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
-          </div>
-        </div>
-      </div>
     </div>
+
+
   </section>
   <!-- /Portfolio -->
-  <!-- Team -->
 
-  <section class="team" id="team">
-    <div class="container">
-      <h2 class="text-center">
-          Meet our team
+  <!-- Interests -->
+  <section class="Interests" id="Interests">
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="dep/img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}'
+      data-toggle="parallax-bg">
+      <h2>
+        Welcome to a perfect theme
+      </h2>
+
+      <p>
+        This is the most powerful theme with thousands of options that you have never seen before.
+      </p>
+      <img alt="Matthew Peterman - A perfect theme" class="gadgets-img hidden-md-down" src="dep/img/gadgets.png">
+      <div class="container">
+        <h2 class="text-center">
+          Interests
         </h2>
 
-      <div class="row">
-        <div class="col-sm-3 col-xs-6"> 
-          <div class="card card-block">
-            <a href="#"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+        <div class="row">
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-rocket"></span>
+                </div>
               </div>
 
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
+              <div>
+                <h3>
+                  Custom Design
+                </h3>
 
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-            </nav>
-
-            <p>
-              Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-            </p>
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
           </div>
-          </a>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-envelope"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Responsive Layout
+                </h3>
+
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-Matthew Peterman"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Innovative Ideas
+                </h3>
+
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-database"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Good Documentation
+                </h3>
+
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-cutlery"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Excellent Interests
+                </h3>
+
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <span class="fa fa-dashboard"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  Retina Ready
+                </h3>
+
+                <p>
+                  Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-sm-3 col-xs-6">
-        <div class="card card-block">
-          <a href="#"><img alt="" class="team-img" src="dep/img/team-2.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-          </nav>
-
-          <p>
-            Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-          </p>
-        </div>
-        </a>
-      </div>
     </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#"><img alt="" class="team-img" src="dep/img/team-3.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-        </nav>
-
-        <p>
-          Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-        </p>
-      </div>
-      </a>
-    </div>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#"><img alt="" class="team-img" src="dep/img/team-4.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-        </nav>
-
-        <p>
-          Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-        </p>
-      </div>
-      </a>
-    </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <!-- /Team -->
-  <!-- @component: footer -->
-
-  <!-- Button trigger modal -->
-
-  <section id="portfoliopast" class="team">
-
-      <div class="container">
-          <div class="row">
-          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1 class="gallery-title">Gallery</h1>
-          </div>
-  
-          <div align="center" class=" col-12">
-              <button class="btn btn-default filter-button" data-filter="all">All</button>
-              <button class="btn btn-default filter-button" data-filter="email">Email</button>
-              <button class="btn btn-default filter-button" data-filter="html">HTML</button>
-              <button class="btn btn-default filter-button" data-filter="design">Design</button>
-              <button class="btn btn-default filter-button" data-filter="social">Social Media</button>
-          </div>
-          <br/>
-  
-  
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter email card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter design card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter html card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter html card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter social card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter social card card-block">
-              <a data-toggle="modal" data-target="#exampleModal"><img alt="" class="team-img" src="dep/img/team-1.jpg">
-                <div class="card-title-wrap">
-                  <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                </div>
-  
-                <div class="team-over">
-                  <h4 class="hidden-md-down">
-                    Connect with me
-                  </h4>
-  
-                  <nav class="social-nav">
-                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-  
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          </div>
-      </div>
+    <!-- /Parallax -->
+    <!-- Interests -->
 
 
   </section>
+  <!-- /Interests -->
+
+  <!-- Contact -->
   <section id="contact">
-<div class="container animated fadeIn">
+    <div class="container animated fadeIn mt-5 p-5">
 
-  <div class="row">
-    <h1 class="header-title"> Contact </h1>
-    <hr>
-    <div class="col-sm-12" id="parent">
-    	<div class="col-sm-5 mx-auto" style="display: inline-block">
-    	<iframe width="100%" height="320px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY" allowfullscreen></iframe>
-    	</div>
-
-    	<div class="col-sm-5 mx-auto" style="display: inline-block; ">
-        <!--action="form.php"-->
-    		<form action="form.php" class="contact-form" method="post">
-	
-		        <div class="form-group">
-		          <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="">
-		        </div>
-		    
-		    
-		        <div class="form-group form_left">
-		          <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
-		        </div>
-		    
-		      <div class="form-group">
-		           <input type="text" class="form-control" id="phone" maxlength="10" placeholder="Mobile No." required="">
-		      </div>
-		      <div class="form-group">
-		      <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
-		      <br>
-	      	  <button class="btn btn-default btn-send mx-auto"> <span class="glyphicon glyphicon-send"></span> Send </button>
-		      </div>
-     		</form>
-    	</div>
-    </div>
-  </div>
-
-
-</div>
-<div class="container mt-5 p-5">
-	<div class="row">
+      <div class="row">
         <!-- Boxes de Acoes -->
-    	<div class="col-xs-12 col-sm-12 col-lg-4">
-			<div class="box">
-				<div class="icon">
-					<div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">MAIL &amp; WEBSITE</h3>
-						<p>
-							<i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; gondhiyahardik6610@gmail.com
-							<br>
-							<br>
-							<i class="fa fa-globe" aria-hidden="true"></i> &nbsp; www.hardikgondhiya.com
-						</p>
-					
-					</div>
-				</div>
-				<div class="space"></div>
-			</div> 
-		</div>
         <div class="col-xs-12 col-sm-12 col-lg-4">
-			<div class="box">
-				<div class="icon">
-					<div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">CONTACT</h3>
-    					<p>
-							<i class="fa fa-mobile-phone" aria-hidden="true"></i> (+61) 437 029 892
-							<br>
-							<br>
-							<i class="fa fa-phone" aria-hidden="true"></i> (+61) 7 3390 2330
-						</p>
-					</div>
-				</div>
-				<div class="space"></div>
-			</div> 
-		</div>
-			
+          <div class="box">
+            <div class="icon">
+              <div class="image">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="info">
+                <h3 class="title">MAIL &amp; WEBSITE</h3>
+                <p>
+                  <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; matthewpeterman@gmail.com
+                  </br>
+                  <i class="fa fa-globe" aria-hidden="true"></i> &nbsp; https://github.com/slyk-style/Modern_Resume/blob/master/index.html
+                </p>
+
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-lg-4">
-			<div class="box">							
-				<div class="icon">
-					<div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">Location</h3>
-    					<p>
-							 <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Capalaba, QLD 4157
-						</p>
-					</div>
-				</div>
-				<div class="space"></div>
-			</div> 
-		</div>		    
-		<!-- /Boxes de Acoes -->
-		
-		<!--My Portfolio  dont Copy this -->
-	    
-	</div>
-</div>
+          <div class="box">
+            <div class="icon">
+              <div class="image">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </div>
+              <div class="info">
+                <h3 class="title">CONTACT</h3>
+                <p>
+                  <i class="fa fa-mobile-phone" aria-hidden="true"></i> (+61) 437 029 892
+                  <br>
+                  <br>
+                  <i class="fa fa-phone" aria-hidden="true"></i> (+61) 7 3390 2330
+                </p>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-lg-4">
+          <div class="box">
+            <div class="icon">
+              <div class="image">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="info">
+                <h3 class="title">Location</h3>
+                <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Capalaba, QLD 4157
+                </p>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <!-- /Boxes de Acoes -->
+
+        <!--My Portfolio  dont Copy this -->
+
+      </div>
+      <div class="row">
+        <h1 class="header-title"> Contact </h1>
+        <hr>
+        <div class="col-sm-12" id="parent">
+          <div class="col-md-6 col-sm-12 mx-auto" style="display: inline-block">
+            <iframe width="100%" height="320px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM9KTrJpXkWsRQK_e81qjAgQ&key=AIzaSyD4s1b9sp_fl9jtsS33lpkdeXC_FBeyFeQ"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="col-md-5 col-sm-12 mx-auto" style="display: inline-block; ">
+            <!--action="form.php"-->
+            <form action="form.php" class="contact-form" method="post">
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="">
+              </div>
 
 
+              <div class="form-group form_left">
+                <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="phone" maxlength="10" placeholder="Mobile No." required="">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..."
+                  required=""></textarea>
+                <br>
+                <button class="btn btn-default btn-send mx-auto">
+                  <span class="glyphicon glyphicon-send"></span> Send </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </section>
+  <!-- /Contact -->
+
+  <!-- Social -->
+  <section class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul class="social-network social-circle">
+            <li>
+              <a href="#" class="icoRss" title="Rss">
+                <i class="fa fa-rss"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icoFacebook" title="Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icoTwitter" title="Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icoGoogle" title="Google +">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icoLinkedin" title="Linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Social -->
+
+  <!-- References -->
+  <section id="contact">
+    <div class="container animated fadeIn">
+
+      <div class="row">
+        <h1 class="header-title"> References </h1>
+        <hr>
+        <div class="col-sm-12" id="parent">
+
+          Avaialable on request
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /References -->
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="bottom">
       <div class="container">
@@ -941,7 +1046,8 @@
 
           <div class="col-lg-12 col-xs-12 text-center">
             <div class="credits">
-             Designed by <a href="https://www.linkedin.com/in/matthewseanpeterman/">Matthew Peterman</a>
+              Designed by
+              <a href="https://www.linkedin.com/in/matthewseanpeterman/">Matthew Peterman</a>
             </div>
           </div>
 
@@ -949,27 +1055,39 @@
       </div>
     </div>
   </footer>
-  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+  <!-- /Footer -->
 
+  <!-- Scroll top -->
+  <a class="scrolltop" style="z-index: 90;" href="#">
+    <span class="fa fa-angle-up"></span>
+  </a>
+  <!-- Scroll top -->
+
+  <!-- Modal Popups -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
+  </div>
+  <!-- /Modal Popups -->
+
+
+</body>
+
   <!-- Required JavaScript Dependencies -->
   <script src="dep/jquery/jquery.min.js"></script>
   <script src="dep/jquery/jquery-migrate.min.js"></script>
@@ -985,128 +1103,316 @@
   <script src="dep/stickyjs/sticky.js"></script>
   <script src="dep/parallax/parallax.js"></script>
   <script src="dep/lockfixed/lockfixed.min.js"></script>
-  <script src="dep/particles/particles.min.js"></script>-
+  <script src="dep/particles/particles.min.js"></script>
+  <script src="dep/chartjs/Chart.bundle.min.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="dep/custom/script.js"></script>
-  <script>
-  $('body').scrollspy();
 
-  
+  <script>
+    $('body').scrollspy();
+
+
     /* ---- particles.js config ---- */
 
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 380,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 180,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#fff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#fff"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
         "line_linked": {
-          "opacity": 1
+          "enable": true,
+          "distance": 150,
+          "color": "#fff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
         }
       },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
+      "retina_detect": true
+    });
+
+  function loadSkillgraph() {
+    $(".skillData").each(function (index, element) {
+      // element == this
+      var mydata = $(element).data();
+      var cnt = 0;
+
+      //recursive call with a time delay so user can see graph draw.
+      function go() {
+        if (cnt++ < mydata['percent']) {
+          setTimeout(go, 10);
+        }
+        $(element).css('width', cnt + '%');
+
       }
+
+      go();
+
+    });
+
+  }
+
+  loadSkillgraph();
+  (function ($) {
+    $.fn.countTo = function (options) {
+      options = options || {};
+
+      return $(this).each(function () {
+        // set options for current element
+        var settings = $.extend({}, $.fn.countTo.defaults, {
+          from: $(this).data('from'),
+          to: $(this).data('to'),
+          speed: $(this).data('speed'),
+          refreshInterval: $(this).data('refresh-interval'),
+          decimals: $(this).data('decimals')
+        }, options);
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+          increment = (settings.to - settings.from) / loops;
+
+        // references & variables that will change with each update
+        var self = this,
+          $self = $(this),
+          loopCount = 0,
+          value = settings.from,
+          data = $self.data('countTo') || {};
+
+        $self.data('countTo', data);
+
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+          clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+        // initialize the element with the starting value
+        render(value);
+
+        function updateTimer() {
+          value += increment;
+          loopCount++;
+
+          render(value);
+
+          if (typeof (settings.onUpdate) == 'function') {
+            settings.onUpdate.call(self, value);
+          }
+
+          if (loopCount >= loops) {
+            // remove the interval
+            $self.removeData('countTo');
+            clearInterval(data.interval);
+            value = settings.to;
+
+            if (typeof (settings.onComplete) == 'function') {
+              settings.onComplete.call(self, value);
+            }
+          }
+        }
+
+        function render(value) {
+          var formattedValue = settings.formatter.call(self, value, settings);
+          $self.html(formattedValue);
+        }
+      });
+    };
+
+    $.fn.countTo.defaults = {
+      from: 0, // the number the element should start at
+      to: 0, // the number the element should end at
+      speed: 1000, // how long it should take to count between the target numbers
+      refreshInterval: 100, // how often the element should be updated
+      decimals: 0, // the number of decimal places to show
+      formatter: formatter, // handler for formatting the value before rendering
+      onUpdate: null, // callback method for every time the element is updated
+      onComplete: null // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+      return value.toFixed(settings.decimals);
     }
-  },
-  "retina_detect": true
+  }(jQuery));
+
+  jQuery(function ($) {
+    // custom formatting example
+    $('.count-number').data('countToOptions', {
+      formatter: function (value, options) {
+        return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+      }
+    });
+
+    // start all the timers
+    $('.timer').each(count);
+
+    function count(options) {
+      var $this = $(this);
+      options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+      $this.countTo(options);
+    }
+  });
+
+
+  
+
+var mainlabels = ["Jose 13", "Jay 12", "Jay 13", "Rob 12", "Rob 13","Jose 12", "Jose 13", "Jay 12", "Jay 13", "Rob 12", "Rob 13"];
+var salesbyperson = [21, 31, 21, 16, 22, 24, 31, 21, 16, 22, 24];
+var ctx = document.getElementById('canvasone').getContext('2d');
+var chart = new Chart(ctx, {
+   type: 'bar',
+   data: {
+      labels: mainlabels,
+      datasets: [{
+         label: 'Sum of Sales',
+         backgroundColor: 'rgba(0, 129, 214, 0.8)',
+         data: salesbyperson
+      }]
+   },
+   options: {
+      tooltips: {
+         callbacks: {
+            label: function(t, d) {
+               if (t.datasetIndex === 1) {
+                  var xLabel = d.datasets[t.datasetIndex].label;
+                  var yLabel = t.yLabel + '%';
+                  return xLabel + ': ' + yLabel;
+               } else if (t.datasetIndex === 0) {
+                  var xLabel = d.datasets[t.datasetIndex].label;
+                  var yLabel = t.yLabel >= 1000 ? '$' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : '$' + t.yLabel;
+                  return xLabel + ': ' + yLabel;
+               }
+            }
+         }
+      },
+      legend: {
+         display: false,
+         position: 'top',
+      },
+      scales: {
+         yAxes: [{
+            ticks: {
+               beginAtZero: true,
+               callback: function(value, index, values) {
+                  if (parseInt(value) >= 1000) {
+                     return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                  } else {
+                     return '$' + value;
+                  }
+               }
+            }
+         }]
+      }
+   },
+   plugins: [{
+      beforeDraw: function(chart) {
+         var labels = chart.data.labels;
+         labels.forEach(function(e, i) {
+            var bar = chart.data.datasets[0]._meta['0'].data[i]._model;
+            var dataPoint = e.split(/\s/)[1];
+            if (dataPoint === '12')
+               bar.backgroundColor = 'blue';
+            else if (dataPoint === '13')
+               bar.backgroundColor = 'green';
+         });
+      }
+   }]
 });
+</script>
 
-  </script>
 
-</body>
 </html>
